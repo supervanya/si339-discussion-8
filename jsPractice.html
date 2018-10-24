@@ -23,15 +23,14 @@
         
         var itemSpan = document.querySelector('#items');
         var allItems = document.querySelectorAll('li')
+
         itemSpan.innerHTML = allItems.length
-        
-        document.querySelector('#time') = new Date();
-        timeSpan.innerHTML = currentdate.toUTCString();
+        document.querySelector('#time').innerHTML = new Date().toUTCString();
 
 //		3. Change the background color and margin for the entire page.
         document.body.style.backgroundColor = "yellow"; // way 1
 //        document.body.style.margin = 20;
-//        document.querySelector('body').style.backgroundColor = "yellow"; // way 2
+        document.querySelector('body').style.backgroundColor = "yellow"; // way 2
         }
         
 //		4. If someone uses the keyboard shortcut to copy the words "University of Michigan" then add the words "Go Blue" to the final div.  Each occurence should be on a separate line.  Don't use paragraphs.
